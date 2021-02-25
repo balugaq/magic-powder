@@ -2,16 +2,13 @@
 name: SlimefunAddon
 
 ## CHANGE this to your username.
-author: CHANGEME
+author: FramesEnd
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: A generic Slimefun4-Addon
+description: A Slimefun-4 Addon that adds... magic powders of many types.
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
-main: me.CHANGEME.slimefunaddon.ExampleAddon
-
-## You can change this to link to your website or repository. You can also remove this line if you want to.
-website: https://github.com/Slimefun/Addon-Template
+main: me.framesend.magicpowder.MagicPowder
 
 ## This value is automatically replaced by the version specified in your pom.xml file.
 ## Do not change this.
