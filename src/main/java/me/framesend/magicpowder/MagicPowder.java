@@ -81,5 +81,4 @@ public class MagicPowder extends JavaPlugin implements SlimefunAddon {
          */
         return this;
     }
-
 }
