@@ -39,7 +39,7 @@ public class MagicPowder extends JavaPlugin implements SlimefunAddon {
          * This class has many constructors, it is very important
          * that you give each item a unique id.
          */
-        SlimefunItemStack slimefunItem = new SlimefunItemStack("UNREFINED_COCAINE", Material.SUGAR, "&bUnrefined Cocaine", "&7 Dangerous.");
+        SlimefunItemStack slimefunItem = new SlimefunItemStack("UNREFINED_COCAINE", Material.SUGAR, "&bUnrefined Cocaine", "&7Dangerous.");
 
         /*
          * 3. Creating a Recipe
