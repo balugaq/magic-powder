@@ -56,6 +56,7 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
          * RecipeType.ENHANCED_CRAFTING_TABLE refers to the machine in
          * which this item is crafted in.
          * Recipe Types from Slimefun itself will automatically add the recipe to that machine.
+         * test test
          */
         SlimefunItem item = new SlimefunItem(category, slimefunItem, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
         item.register(this);
