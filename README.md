@@ -1,5 +1,5 @@
-# MagicPowder
-This is a custom Addon for the Slimefun plugin written by FramesEnd or redstone861.<br>
+# 魔芋工艺
+该Slimefun4附属添加了魔芋粉等食物
 
 ## Created using the SlimefunAddon template. 
 This plugin began as the SlimefunAddon template.<br>
