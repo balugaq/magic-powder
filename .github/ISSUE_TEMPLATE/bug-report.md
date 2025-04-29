@@ -13,7 +13,7 @@ assignees: ''
 <!-- Try to write at least 4-6 sentences. -->
 
 ## Steps to reproduce the Issue (Required)
-<!-- Youtube Videos and Screenshots are recommended! -->
+<!-- YouTube Videos and Screenshots are recommended! -->
 
 ## Expected behavior (Required)
 <!-- What did you expect to happen? -->

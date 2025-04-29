@@ -4,7 +4,7 @@ name: MagicPowder
 ## CHANGE this to your username.
 author: FramesEnd
 
-## CHANGE this to a meaninful but short description of your plugin.
+## CHANGE this to a meaningful but short description of your plugin.
 description: A Slimefun-4 Addon that adds... magic powders of many types.
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
