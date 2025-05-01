@@ -26,7 +26,7 @@ public class UnrefinedCocaine extends SlimefunItem {
         event.getItem().setAmount(event.getItem().getAmount() - 1);
         event.getPlayer().setHealth(Math.max(0, event.getPlayer().getHealth() - 4));
         event.getPlayer().sendMessage(ChatColor.RED + "Your nose and eyes burn.");
-        event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.HUNGER, 20, 1));
-        event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 10, 3));
+        event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.HUNGER, 2000, 1));
+        event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 1000, 3));
     }
 }
