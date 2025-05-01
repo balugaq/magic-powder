@@ -1,5 +1,10 @@
 package me.framesend.magicpowder;
 
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.java.JavaPlugin;
+
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -7,10 +12,6 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public class MagicPowder extends JavaPlugin implements SlimefunAddon {
 
@@ -24,11 +25,11 @@ public class MagicPowder extends JavaPlugin implements SlimefunAddon {
         }
 
 
-        ItemStack categoryItem = new CustomItemStack(Material.SUGAR, "&bMagic Powders", "", "&a> Click to open");
+        ItemStack categoryItem = new CustomItemStack(Material.SUGAR, "&b魔芋工艺", "", "&a> 单击打开");
         NamespacedKey categoryId = new NamespacedKey(this, "magic_powders");
         ItemGroup category = new ItemGroup(categoryId, categoryItem);
 
-        SlimefunItemStack cocaLeafItem = new SlimefunItemStack("COCA_LEAF", Material.KELP, "&bCoca Leaf", "", "&7It seems useless.");
+        SlimefunItemStack cocaLeafItem = new SlimefunItemStack("COCA_LEAF", Material.KELP, "&b魔芋叶", "", "&7可作为合成材料");
         ItemStack[] cocaLeafRecipe = {new ItemStack(Material.ACACIA_LEAVES), new ItemStack(Material.ACACIA_LEAVES), new ItemStack(Material.ACACIA_LEAVES),
                 new ItemStack(Material.ACACIA_LEAVES), new ItemStack(Material.ACACIA_LEAVES), new ItemStack(Material.ACACIA_LEAVES),
                 new ItemStack(Material.ACACIA_LEAVES), new ItemStack(Material.ACACIA_LEAVES), new ItemStack(Material.ACACIA_LEAVES)};
@@ -36,7 +37,7 @@ public class MagicPowder extends JavaPlugin implements SlimefunAddon {
         SlimefunItem cocaleaf = new CocaLeaf(category, cocaLeafItem, RecipeType.ENHANCED_CRAFTING_TABLE, cocaLeafRecipe);
         cocaleaf.register(this);
 
-        SlimefunItemStack cocaPowderItem = new SlimefunItemStack("COCA_POWDER", Material.DEAD_BRAIN_CORAL_FAN, "&bCoca Powder", "", "&7What's this for?");
+        SlimefunItemStack cocaPowderItem = new SlimefunItemStack("COCA_POWDER", Material.DEAD_BRAIN_CORAL_FAN, "&b魔芋片", "", "&7它是干啥的?");
         ItemStack[] cocaPowderRecipe = {
                 cocaLeafItem, cocaLeafItem, cocaLeafItem,
                 cocaLeafItem, cocaLeafItem, cocaLeafItem,
@@ -46,7 +47,7 @@ public class MagicPowder extends JavaPlugin implements SlimefunAddon {
         SlimefunItem cocapowder = new SlimefunItem(category, cocaPowderItem, RecipeType.ORE_CRUSHER, cocaPowderRecipe);
         cocapowder.register(this);
 
-        SlimefunItemStack unrefinedCocaineItem = new SlimefunItemStack("UNREFINED_COCAINE", Material.SUGAR, "&bUnrefined Cocaine", "", "&7It seems useless.");
+        SlimefunItemStack unrefinedCocaineItem = new SlimefunItemStack("UNREFINED_COCAINE", Material.SUGAR, "&b魔芋粉", "", "&7看上去不是很有用");
         ItemStack[] unrefinedCocaineRecipe = {
                 cocaPowderItem, cocaPowderItem, cocaPowderItem,
                 cocaPowderItem, cocaPowderItem, cocaPowderItem,
